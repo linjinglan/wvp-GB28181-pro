@@ -21,7 +21,7 @@ export default {
   created() {
     if(!this.$cookies.get("session")){
       //如果没有登录状态则跳转到登录页
-      this.$router.push('/login');
+      //this.$router.push('/login');
     }
   },
   //监听路由检查登录
@@ -42,7 +42,7 @@ export default {
       //cookie操作方法在源码里有或者参考网上的即可
       if(!this.$cookies.get("session")){
         //如果没有登录状态则跳转到登录页
-        this.$router.push('/login');
+        //this.$router.push('/login');
       }
     },
     getCookie: function (cname) {
