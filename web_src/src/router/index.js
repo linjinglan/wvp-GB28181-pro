@@ -6,6 +6,7 @@ import videoList from '../components/videoList.vue'
 import channelList from '../components/channelList.vue'
 import devicePosition from  '../components/devicePosition.vue'
 import login from '../components/Login.vue'
+import videoPage from '../components/video/index'
 
 const originalPush = VueRouter.prototype.push
 VueRouter.prototype.push = function push(location) {
@@ -21,6 +22,10 @@ export default new VueRouter({
     {
       path: '/',
       component: control,
+    },
+    {
+      path: '/fsuVideo',
+      component: videoPage
     },
     {
       path: '/videoList',
